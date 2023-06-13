@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/4.2.4/fxparser.min.js" integrity="sha512-U/b4HYu1VXy/74pUllARRdXXr08gsSWAdViEdswC+QeLOm3bYFcTRR8PeLdw57C8IozWosREOJRSF2b66QPjgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="index.js"></script>
+</head>
+<body style="display: flex; width: 100vw; height: 100vh; justify-content: center; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 20px">
+        <div style="display: flex; gap: 10px">
+            <input type="number" min="0" style="width: 200px; height: 25px" id="inputFrom" placeholder="0.00" minlength="1" required>
+            <select name="currencyFrom" id="selectFrom" required>
+                <option selected="selected" value="usd">USD</option>
+                <option value="rub">RUB</option>
+            </select>
+        </div>
+        <div style="display: flex; gap: 10px">
+            <input type="number" min="0" style="width: 200px; height: 25px" id="inputTo" disabled placeholder="0.00">
+            <select name="currencyTo" id="selectTo" disabled>
+                <option value="usd">USD</option>
+                <option selected="selected" value="rub">RUB</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
